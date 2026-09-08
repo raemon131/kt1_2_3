@@ -1,0 +1,17 @@
+{
+  "name": "harj2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc ./src/main.ts --outDir ./dist --module esnext --target esnext --declaration --ignoreConfig",
+    "preview": "vite preview",
+    "start": "node ./dist/main.js",
+    "restart": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vite": "^8.2.2"
+  }
+}
